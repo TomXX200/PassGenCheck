@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="homepage">
+
+    <h1>Password Generator</h1>
+
+    <form action="/generate" method="POST">
+
+    <input name="first" autocomplete="off" placeholder="First name">
+
+    <input name="surname" autocomplete="off" placeholder="Surname">
+
+    <input name="date" autocomplete="off" type="date" placeholder="Date of birth">
+
+
+    <h2>Enable Symbols</h2>
+    <input name="symbol" type="checkbox" placeholder="Symbol">
+
+    <button>Generate!</button>
+    
+    </form>
+
+    {% if generated %}
+    <p>Your generated password is: {{ generated }}</p>
+    {% endif %}
+
+    <div class="test">
+    <h1>Password Strength Test</h1>
+
+    <form action="/test" method="POST">
+
+        <input name="password" autocomplete="off" placeholder="Password">
+
+        <button>Test!</button>
+
+    </form>
+
+    {% if tested is not none %}
+    <p>Your passwords strength is: {{ tested }}</p>
+    {% endif %}
+
+    </div>
+    </div>
+
+</body>
+</html>

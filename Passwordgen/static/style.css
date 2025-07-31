@@ -1,0 +1,63 @@
+@font-face{
+    font-family: 'LemonMilk';
+    src: url('/static/LEMONMILK-Light.otf') format('opentype');
+}
+
+.homepage{
+    text-align: center;
+}
+
+.homepage button{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.homepage button:hover{
+    transition: 0.5s;
+    background: white;
+    color: black;
+    cursor: pointer;
+}
+
+.homepage [name='symbol']{
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.homepage h1{
+    font-family: LemonMilk;
+}
+
+.homepage h2{
+    font-size: 15px;
+    font-family: LemonMilk;
+}
+
+.homepage p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
+
+.homepage input{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.test{
+    padding-top: 15px;
+}
+
+.test p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+}
